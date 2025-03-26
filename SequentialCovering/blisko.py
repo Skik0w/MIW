@@ -59,7 +59,7 @@ while not all(pokryte) and dlugosc <= maks_dlugosc:
 def wypisz_reguly(lista_regul):
     for warunki, decyzja, wsparcie in lista_regul:
         opis = ' oraz '.join([f'a{a+1}={val}' for a, val in warunki])
-        print(f'{opis} => decyzja={decyzja} [wsparcie: {wsparcie}]')
+        print(f'{opis} => decyzja={decyzja} [{wsparcie}]')
 
 if __name__ == '__main__':
     wypisz_reguly(reguly)
